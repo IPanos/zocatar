@@ -47,7 +47,7 @@
       "Then let the moonlight guide your hand."
     ],
     "grants_move": "move_puppeteers_grasp",
-    "sets_flag": "flag_vitalis_accepted"
+    "sets_flags": ["flag_vitalis_accepted", "flag_sub_vitalis_complete"]
   },
   "sub_vitalis_refuse": {
     "dialogue_id": "sub_vitalis_refuse",
@@ -56,6 +56,6 @@
     "lines": [
       "Then walk away, and never seek this ruin again."
     ],
-    "sets_flag": "flag_vitalis_refused"
+    "sets_flags": ["flag_vitalis_refused", "flag_sub_vitalis_complete"]
   }
 }

@@ -17,6 +17,7 @@
     "lines": [
       "Most stone-shapers hit a metal wall and break their wrists. Want to learn to tear steel like paper? Win three rounds in my pit!"
     ],
-    "triggers_battle": "trial_metal_pit_3rounds"
+    "triggers_battle": "trial_metal_pit_3rounds",
+    "sets_flag": "flag_sub_metal_complete"
   }
 }

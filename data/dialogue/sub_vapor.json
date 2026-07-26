@@ -34,6 +34,7 @@
     "lines": [
       "Pass my trial of breath in the Sunken Temple, and you will never need a river nearby again."
     ],
-    "triggers_battle": "trial_vapor_breath"
+    "triggers_battle": "trial_vapor_breath",
+    "sets_flag": "flag_sub_vapor_complete"
   }
 }

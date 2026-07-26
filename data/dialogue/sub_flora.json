@@ -33,6 +33,7 @@
     "lines": [
       "Defeat my vine-guardians in the deep swamp, and I will show you how to draw power from flora."
     ],
-    "triggers_battle": "trial_flora_vine_guardians"
+    "triggers_battle": "trial_flora_vine_guardians",
+    "sets_flag": "flag_sub_flora_complete"
   }
 }

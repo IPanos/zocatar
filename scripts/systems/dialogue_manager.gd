@@ -63,6 +63,9 @@ func _goto_node(dialogue_id: String) -> void:
 		sfx_cued.emit(current_node["sfx"])
 	if current_node.get("sets_flag"):
 		GameState.set_world_flag(current_node["sets_flag"], true)
+	if current_node.get("sets_flags"):
+		for flag_name in current_node["sets_flags"]:
+			GameState.set_world_flag(flag_name, true)
 	advance()
 
 func _complete_node() -> void:
