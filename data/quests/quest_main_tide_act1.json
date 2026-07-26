@@ -1,0 +1,16 @@
+{
+  "quest_id": "quest_main_tide_act1",
+  "title": "Furnace at the Edge of Ice",
+  "prerequisites": { "required_seals": [], "required_level": null },
+  "steps": [
+    {
+      "step_index": 0,
+      "description": "Confront the Pyre Empire's patrol at Frost Haven Pier as they attempt to seize the village's tide-shapers.",
+      "target_location": "map_frost_haven_pier",
+      "completion_flag": "flag_main_tide_act1_started"
+    }
+  ],
+  "rewards": null,
+  "dialogue_ref": "main_tide_act1",
+  "battle_ref": "battle_tutorial_pyre_scout"
+}

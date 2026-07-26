@@ -1,0 +1,41 @@
+{
+  "tide_act1_01": {
+    "dialogue_id": "tide_act1_01",
+    "speaker_name": "Chief Kanaak",
+    "portrait_id": "kanaak_neutral",
+    "lines": [
+      "Another glacier dissolved overnight. Look at the horizon... red soot falling like ash."
+    ],
+    "next_dialogue_id": "tide_act1_02"
+  },
+  "tide_act1_02": {
+    "dialogue_id": "tide_act1_02",
+    "speaker_name": "Chief Kanaak",
+    "portrait_id": "kanaak_neutral",
+    "lines": [
+      "The Pyre Empire's steam engines are boiling our sacred hunting waters and chaining our tide-shapers."
+    ],
+    "next_dialogue_id": "tide_act1_03"
+  },
+  "tide_act1_03": {
+    "dialogue_id": "tide_act1_03",
+    "speaker_name": "Pyre Scout",
+    "portrait_id": "pyre_scout_neutral",
+    "sfx": "sfx_steam_hiss",
+    "stage_direction": "Pyre Patrol Boat animates into dock",
+    "lines": [
+      "By order of the Ember Warlord! This fjord belongs to the Iron Forge Guild. Surrender your tide-shapers!"
+    ],
+    "next_dialogue_id": "tide_act1_04"
+  },
+  "tide_act1_04": {
+    "dialogue_id": "tide_act1_04",
+    "speaker_name": "Player",
+    "portrait_id": "player_neutral",
+    "lines": [
+      "You won't take another person from this village!"
+    ],
+    "triggers_battle": "battle_tutorial_pyre_scout",
+    "sets_flag": "flag_main_tide_act1_started"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "quest_id": "quest_sub_lightning",
+  "title": "The Cold Spark",
+  "prerequisites": { "required_seals": ["pyre_seal", "aether_seal"], "required_level": 18 },
+  "steps": [
+    {
+      "step_index": 0,
+      "description": "Locate Master Rai on Thunder Ridge Plateau.",
+      "target_location": "map_thunder_ridge",
+      "completion_flag": "flag_met_master_rai"
+    },
+    {
+      "step_index": 1,
+      "description": "Complete the Trial of Calibration to separate positive and negative energy.",
+      "target_location": "map_thunder_ridge",
+      "completion_flag": "flag_lightning_trial_complete"
+    }
+  ],
+  "rewards": { "unlocked_move_ids": ["move_arc_flash", "move_lightning_redirect"], "exp_points": 750 },
+  "dialogue_ref": "sub_lightning"
+}

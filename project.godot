@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 GameState="*res://scripts/autoload/game_state.gd"
 SaveSystem="*res://scripts/autoload/save_system.gd"
 ScalingEngine="*res://scripts/systems/scaling_engine.gd"
+DialogueManager="*res://scripts/systems/dialogue_manager.gd"
 
 [display]
 

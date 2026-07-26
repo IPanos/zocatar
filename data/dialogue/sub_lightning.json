@@ -1,0 +1,50 @@
+{
+  "sub_lightning_01": {
+    "dialogue_id": "sub_lightning_01",
+    "speaker_name": "Master Rai",
+    "portrait_id": "rai_neutral",
+    "lines": [
+      "Halt! One step closer during a storm and you'll be ash before your foot hits the dirt."
+    ],
+    "next_dialogue_id": "sub_lightning_02"
+  },
+  "sub_lightning_02": {
+    "dialogue_id": "sub_lightning_02",
+    "speaker_name": "Player",
+    "portrait_id": "player_neutral",
+    "lines": [
+      "I came to learn how to generate lightning!"
+    ],
+    "next_dialogue_id": "sub_lightning_03"
+  },
+  "sub_lightning_03": {
+    "dialogue_id": "sub_lightning_03",
+    "speaker_name": "Master Rai",
+    "portrait_id": "rai_neutral",
+    "lines": [
+      "Generate it? Most Pyre-shapers think lightning is just 'hot fire.' Fools! Fire is passion. Lightning is cold separation."
+    ],
+    "next_dialogue_id": "sub_lightning_04"
+  },
+  "sub_lightning_04": {
+    "dialogue_id": "sub_lightning_04",
+    "speaker_name": "Master Rai",
+    "portrait_id": "rai_neutral",
+    "lines": [
+      "You must split positive and negative energy within yourself, then let them clash..."
+    ],
+    "next_dialogue_id": "sub_lightning_05"
+  },
+  "sub_lightning_05": {
+    "dialogue_id": "sub_lightning_05",
+    "speaker_name": "Master Rai",
+    "portrait_id": "rai_neutral",
+    "sfx": "sfx_lightning_crack",
+    "stage_direction": "Blue flash effect",
+    "lines": [
+      "Pass my trial of focus, and I will teach you to guide the spark."
+    ],
+    "triggers_battle": "trial_lightning_focus",
+    "sets_flag": "flag_lightning_trial_complete"
+  }
+}

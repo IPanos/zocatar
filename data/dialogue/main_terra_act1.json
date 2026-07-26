@@ -1,0 +1,40 @@
+{
+  "terra_act1_01": {
+    "dialogue_id": "terra_act1_01",
+    "speaker_name": "Master Goran",
+    "portrait_id": "goran_neutral",
+    "lines": [
+      "Plant your feet! Terra-shaping isn't about moving rock; it's about being immovable!"
+    ],
+    "next_dialogue_id": "terra_act1_02"
+  },
+  "terra_act1_02": {
+    "dialogue_id": "terra_act1_02",
+    "speaker_name": "Hurricane Warlord",
+    "portrait_id": "hurricane_warlord_neutral",
+    "sfx": "sfx_wind_whistle_high",
+    "stage_direction": "Darkness overlay covers the quarry tiles",
+    "lines": [
+      "People of the dust! Pay double tribute today, or we strip the roofs from your stone halls!"
+    ],
+    "next_dialogue_id": "terra_act1_03"
+  },
+  "terra_act1_03": {
+    "dialogue_id": "terra_act1_03",
+    "speaker_name": "Master Goran",
+    "portrait_id": "goran_neutral",
+    "lines": [
+      "Rogue wind-kin... flying higher than our stone throws can reach!"
+    ],
+    "next_dialogue_id": "terra_act1_04"
+  },
+  "terra_act1_04": {
+    "dialogue_id": "terra_act1_04",
+    "speaker_name": "Master Goran",
+    "portrait_id": "goran_neutral",
+    "lines": [
+      "Kid, go learn the speed of Pyre, the fluid reach of Tide, and the lift of Aether so we can ground them!"
+    ],
+    "sets_flag": "flag_main_terra_act1_started"
+  }
+}

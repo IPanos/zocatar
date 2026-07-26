@@ -1,0 +1,6 @@
+[
+  { "origin": "Aether", "faction_name": "Aether Nomads", "identity": "High-altitude monks, wandering scholars", "leader": "Elder Corin", "philosophy": "Freedom through detachment and wind movement." },
+  { "origin": "Tide", "faction_name": "Tide Clans", "identity": "Glacial fishermen, seafaring navigators", "leader": "Chief Kanaak", "philosophy": "Adaptability and flow; preserving the frozen coast." },
+  { "origin": "Terra", "faction_name": "Terra Dominion", "identity": "Mountain miners, stone builders, arena fighters", "leader": "Master Goran", "philosophy": "Strength through stillness and unyielding roots." },
+  { "origin": "Pyre", "faction_name": "Pyre Empire", "identity": "Industrial shipbuilders, forge guildmasters", "leader": "General Ignis", "philosophy": "Progress through fire and relentless ambition." }
+]

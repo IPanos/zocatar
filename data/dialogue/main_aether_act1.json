@@ -1,0 +1,78 @@
+{
+  "aether_act1_corin_intro": {
+    "dialogue_id": "aether_act1_corin_intro",
+    "speaker_name": "Elder Corin",
+    "portrait_id": "corin_neutral",
+    "lines": [
+      "Breathe deeply, young practitioner.",
+      "The winds here have carried our peace for a thousand years...",
+      "But look down into the canyon. The lowlands are choked with red dust."
+    ],
+    "choices": [
+      { "text": "The air feels heavy today, Elder.", "next_dialogue_id": "aether_act1_corin_heavy" },
+      { "text": "I am ready for my final wind trial!", "next_dialogue_id": "aether_act1_corin_ready" }
+    ]
+  },
+  "aether_act1_corin_heavy": {
+    "dialogue_id": "aether_act1_corin_heavy",
+    "speaker_name": "Elder Corin",
+    "portrait_id": "corin_neutral",
+    "lines": [
+      "[TODO: Storyteller — write branch content]"
+    ]
+  },
+  "aether_act1_corin_ready": {
+    "dialogue_id": "aether_act1_corin_ready",
+    "speaker_name": "Elder Corin",
+    "portrait_id": "corin_neutral",
+    "lines": [
+      "[TODO: Storyteller — write branch content]"
+    ]
+  },
+  "aether_act1_siege_01": {
+    "dialogue_id": "aether_act1_siege_01",
+    "speaker_name": "Elder Corin",
+    "portrait_id": "corin_neutral",
+    "lines": [
+      "Breathe deeply, young practitioner. The winds here have carried our peace for a thousand years..."
+    ],
+    "next_dialogue_id": "aether_act1_siege_02"
+  },
+  "aether_act1_siege_02": {
+    "dialogue_id": "aether_act1_siege_02",
+    "speaker_name": "Elder Corin",
+    "portrait_id": "corin_neutral",
+    "lines": [
+      "You feel it too, don't you? The dust rising from the valleys below."
+    ],
+    "next_dialogue_id": "aether_act1_siege_03"
+  },
+  "aether_act1_siege_03": {
+    "dialogue_id": "aether_act1_siege_03",
+    "speaker_name": "Novice Monk",
+    "portrait_id": "novice_monk_neutral",
+    "sfx": "sfx_screen_shake_heavy",
+    "lines": [
+      "Elder! Massive iron boring-machines are tunneling through the sacred cliffs!"
+    ],
+    "next_dialogue_id": "aether_act1_siege_04"
+  },
+  "aether_act1_siege_04": {
+    "dialogue_id": "aether_act1_siege_04",
+    "speaker_name": "Elder Corin",
+    "portrait_id": "corin_neutral",
+    "lines": [
+      "The Mountain Sovereign... He seeks to turn our home into an elevated stone fortress!"
+    ],
+    "next_dialogue_id": "aether_act1_siege_05"
+  },
+  "aether_act1_siege_05": {
+    "dialogue_id": "aether_act1_siege_05",
+    "speaker_name": "Elder Corin",
+    "portrait_id": "corin_neutral",
+    "lines": [
+      "Take your glider. Descend to the coastal ports and master Tide, Pyre, and Terra before returning to free our skies!"
+    ],
+    "sets_flag": "flag_main_aether_act1_started"
+  }
+}

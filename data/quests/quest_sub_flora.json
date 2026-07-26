@@ -1,0 +1,15 @@
+{
+  "quest_id": "quest_sub_flora",
+  "title": "The Whispering Roots",
+  "prerequisites": { "required_seals": ["tide_seal", "terra_seal"], "required_level": null },
+  "steps": [
+    {
+      "step_index": 0,
+      "description": "Seek out the Swamp Hermit and defeat his vine-guardians in the deep swamp of Mist Mire Hollow.",
+      "target_location": "map_mist_mire_hollow",
+      "completion_flag": "flag_sub_flora_complete"
+    }
+  ],
+  "rewards": { "unlocked_move_ids": ["move_vine_snare"], "exp_points": null },
+  "dialogue_ref": "sub_flora"
+}

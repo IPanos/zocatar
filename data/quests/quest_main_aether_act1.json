@@ -1,0 +1,15 @@
+{
+  "quest_id": "quest_main_aether_act1",
+  "title": "Siege of Sky Sanctuary",
+  "prerequisites": { "required_seals": [], "required_level": null },
+  "steps": [
+    {
+      "step_index": 0,
+      "description": "Speak with Elder Corin at Gale Crest Monastery as the Iron Forge Guild's boring-machines tunnel through the sacred cliffs.",
+      "target_location": "map_gale_crest_monastery",
+      "completion_flag": "flag_main_aether_act1_started"
+    }
+  ],
+  "rewards": null,
+  "dialogue_ref": "main_aether_act1"
+}

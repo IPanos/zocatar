@@ -12,6 +12,23 @@ const OPPOSITE_ORIGIN: Dictionary = {
 	"Pyre": "Tide",
 }
 
+# Canonical seal id per origin — matches the "_seal" suffix convention used in quest_*.json prerequisites.
+const ORIGIN_SEAL_IDS: Dictionary = {
+	"Aether": "aether_seal",
+	"Tide": "tide_seal",
+	"Terra": "terra_seal",
+	"Pyre": "pyre_seal",
+}
+
+# Sub-discipline unlocks from paired seals (Vitalis/Blood is excluded — it depends on tide_seal + a
+# night-time condition, not a seal pair, and is granted directly via the sub_vitalis dialogue branch).
+const SUB_DISCIPLINE_COMBOS: Dictionary = {
+	"Lightning": ["pyre_seal", "aether_seal"],
+	"Flora": ["tide_seal", "terra_seal"],
+	"Vapor": ["aether_seal", "tide_seal"],
+	"Metal": ["terra_seal", "pyre_seal"],
+}
+
 var starting_origin: String = ""
 var unlocked_seals: Array[String] = []
 var unlocked_disciplines: Array[String] = []
@@ -34,6 +51,18 @@ func unlock_seal(seal_name: String) -> void:
 	if seal_name not in unlocked_seals:
 		unlocked_seals.append(seal_name)
 		seal_unlocked.emit(seal_name)
+		_check_discipline_unlocks()
+
+func has_seal(seal_id: String) -> bool:
+	return seal_id in unlocked_seals
+
+func _check_discipline_unlocks() -> void:
+	for discipline_name in SUB_DISCIPLINE_COMBOS:
+		if discipline_name in unlocked_disciplines:
+			continue
+		var required_seals: Array = SUB_DISCIPLINE_COMBOS[discipline_name]
+		if required_seals.all(func(seal_id): return has_seal(seal_id)):
+			unlock_discipline(discipline_name)
 
 func unlock_discipline(discipline_name: String) -> void:
 	if discipline_name not in unlocked_disciplines:

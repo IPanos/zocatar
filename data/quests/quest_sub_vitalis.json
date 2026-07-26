@@ -1,0 +1,20 @@
+{
+  "quest_id": "quest_sub_vitalis",
+  "title": "The Dark Moon's Curse",
+  "prerequisites": { "required_seals": ["tide_seal"], "required_level": null },
+  "special_condition": "system_time.is_night()",
+  "steps": [
+    {
+      "step_index": 0,
+      "description": "Find Lady Morgana at the Lunar Solstice Ruins and choose whether to accept her forbidden teaching.",
+      "target_location": "map_lunar_solstice_ruins",
+      "completion_flag": "flag_sub_vitalis_complete"
+    }
+  ],
+  "rewards": {
+    "unlocked_move_ids": ["move_puppeteers_grasp"],
+    "exp_points": null,
+    "reward_conditional_on_flag": "flag_vitalis_accepted"
+  },
+  "dialogue_ref": "sub_vitalis"
+}

@@ -1,0 +1,61 @@
+{
+  "sub_vitalis_01": {
+    "dialogue_id": "sub_vitalis_01",
+    "speaker_name": "Lady Morgana",
+    "portrait_id": "morgana_neutral",
+    "lines": [
+      "The moon is full tonight... Can you feel it? The tide tugging at the liquid within your own veins?"
+    ],
+    "next_dialogue_id": "sub_vitalis_02"
+  },
+  "sub_vitalis_02": {
+    "dialogue_id": "sub_vitalis_02",
+    "speaker_name": "Player",
+    "portrait_id": "player_neutral",
+    "lines": [
+      "This place feels wrong. What kind of technique is this?"
+    ],
+    "next_dialogue_id": "sub_vitalis_03"
+  },
+  "sub_vitalis_03": {
+    "dialogue_id": "sub_vitalis_03",
+    "speaker_name": "Lady Morgana",
+    "portrait_id": "morgana_neutral",
+    "lines": [
+      "Why bend the river... when you can bend the riverbed of living flesh?"
+    ],
+    "next_dialogue_id": "sub_vitalis_04"
+  },
+  "sub_vitalis_04": {
+    "dialogue_id": "sub_vitalis_04",
+    "speaker_name": "Lady Morgana",
+    "portrait_id": "morgana_neutral",
+    "stage_direction": "Player sprite is locked into forced stun animation",
+    "lines": [
+      "A dangerous power. One the world outlaws. I can teach you... if you have the courage to carry its dark burden."
+    ],
+    "choices": [
+      { "text": "Teach me. I need every advantage.", "next_dialogue_id": "sub_vitalis_accept" },
+      { "text": "This is corrupt. I refuse!", "next_dialogue_id": "sub_vitalis_refuse" }
+    ]
+  },
+  "sub_vitalis_accept": {
+    "dialogue_id": "sub_vitalis_accept",
+    "speaker_name": "Lady Morgana",
+    "portrait_id": "morgana_neutral",
+    "lines": [
+      "Then let the moonlight guide your hand."
+    ],
+    "grants_move": "move_puppeteers_grasp",
+    "sets_flag": "flag_vitalis_accepted"
+  },
+  "sub_vitalis_refuse": {
+    "dialogue_id": "sub_vitalis_refuse",
+    "speaker_name": "Lady Morgana",
+    "portrait_id": "morgana_neutral",
+    "lines": [
+      "Then walk away, and never seek this ruin again."
+    ],
+    "sets_flag": "flag_vitalis_refused"
+  }
+}

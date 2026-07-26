@@ -1,0 +1,6 @@
+{
+  "Aether": { "boss_name": "The Mountain Sovereign", "boss_origin": "Terra", "description": "Terra Master using heavy armor and unshakeable stone constructs." },
+  "Tide": { "boss_name": "The Ember Warlord", "boss_origin": "Pyre", "description": "Pyre Master utilizing steam engines and thermal blasts." },
+  "Terra": { "boss_name": "The Hurricane Warlord", "boss_origin": "Aether", "description": "Aether Master riding air-currents with extreme evasion." },
+  "Pyre": { "boss_name": "The Tsunami Matriarch", "boss_origin": "Tide", "description": "Tide Master commanding ocean surges and blood-flow locks." }
+}

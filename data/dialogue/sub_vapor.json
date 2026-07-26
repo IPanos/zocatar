@@ -1,0 +1,39 @@
+{
+  "sub_vapor_01": {
+    "dialogue_id": "sub_vapor_01",
+    "speaker_name": "Desert Nomad",
+    "portrait_id": "nomad_neutral",
+    "lines": [
+      "Foolish traveler... coming into the Great Wastes without a canteen?"
+    ],
+    "next_dialogue_id": "sub_vapor_02"
+  },
+  "sub_vapor_02": {
+    "dialogue_id": "sub_vapor_02",
+    "speaker_name": "Player",
+    "portrait_id": "player_neutral",
+    "lines": [
+      "My water pouch... dried up miles ago..."
+    ],
+    "next_dialogue_id": "sub_vapor_03"
+  },
+  "sub_vapor_03": {
+    "dialogue_id": "sub_vapor_03",
+    "speaker_name": "Desert Nomad",
+    "portrait_id": "nomad_neutral",
+    "lines": [
+      "Then drink from the air. There is moisture in every breath if you know how to pull it."
+    ],
+    "next_dialogue_id": "sub_vapor_04"
+  },
+  "sub_vapor_04": {
+    "dialogue_id": "sub_vapor_04",
+    "speaker_name": "Desert Nomad",
+    "portrait_id": "nomad_neutral",
+    "stage_direction": "Water particle particles gather in mid-air",
+    "lines": [
+      "Pass my trial of breath in the Sunken Temple, and you will never need a river nearby again."
+    ],
+    "triggers_battle": "trial_vapor_breath"
+  }
+}

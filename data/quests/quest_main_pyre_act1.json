@@ -1,0 +1,15 @@
+{
+  "quest_id": "quest_main_pyre_act1",
+  "title": "The Boiling Seas",
+  "prerequisites": { "required_seals": [], "required_level": null },
+  "steps": [
+    {
+      "step_index": 0,
+      "description": "Report to General Ignis at Ashfall Docks as tidal surges flood the forge engines.",
+      "target_location": "map_ashfall_docks",
+      "completion_flag": "flag_main_pyre_act1_started"
+    }
+  ],
+  "rewards": null,
+  "dialogue_ref": "main_pyre_act1"
+}

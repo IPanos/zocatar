@@ -1,0 +1,15 @@
+{
+  "quest_id": "quest_sub_metal",
+  "title": "The Unbending Iron",
+  "prerequisites": { "required_seals": ["terra_seal", "pyre_seal"], "required_level": null },
+  "steps": [
+    {
+      "step_index": 0,
+      "description": "Win three rounds in Inventor Kyle's pit to learn how to shape metal.",
+      "target_location": "map_iron_ridge_arena",
+      "completion_flag": "flag_sub_metal_complete"
+    }
+  ],
+  "rewards": { "unlocked_move_ids": ["move_iron_siege"], "exp_points": null },
+  "dialogue_ref": "sub_metal"
+}

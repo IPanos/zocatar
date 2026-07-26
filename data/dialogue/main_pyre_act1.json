@@ -1,0 +1,39 @@
+{
+  "pyre_act1_01": {
+    "dialogue_id": "pyre_act1_01",
+    "speaker_name": "General Ignis",
+    "portrait_id": "ignis_neutral",
+    "lines": [
+      "Report! Why are the forge engines down?"
+    ],
+    "next_dialogue_id": "pyre_act1_02"
+  },
+  "pyre_act1_02": {
+    "dialogue_id": "pyre_act1_02",
+    "speaker_name": "Engineer",
+    "portrait_id": "engineer_neutral",
+    "lines": [
+      "General! Tidal surges came out of nowhere! Water flooded the low-level foundries!"
+    ],
+    "next_dialogue_id": "pyre_act1_03"
+  },
+  "pyre_act1_03": {
+    "dialogue_id": "pyre_act1_03",
+    "speaker_name": "Tsunami Matriarch",
+    "portrait_id": "tsunami_matriarch_neutral",
+    "sfx": "sfx_water_splash_massive",
+    "lines": [
+      "Pyre-shapers! Your smoke blackens our reefs! The ocean comes to reclaim its coast!"
+    ],
+    "next_dialogue_id": "pyre_act1_04"
+  },
+  "pyre_act1_04": {
+    "dialogue_id": "pyre_act1_04",
+    "speaker_name": "General Ignis",
+    "portrait_id": "ignis_neutral",
+    "lines": [
+      "She means to drown the archipelago! Journey inland, master Terra, Aether, and Tide, and extinguish her crusade!"
+    ],
+    "sets_flag": "flag_main_pyre_act1_started"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "sub_flora_01": {
+    "dialogue_id": "sub_flora_01",
+    "speaker_name": "Swamp Hermit",
+    "portrait_id": "hermit_neutral",
+    "lines": [
+      "Step lighter, traveler. You're stepping on my vines' fingers."
+    ],
+    "next_dialogue_id": "sub_flora_02"
+  },
+  "sub_flora_02": {
+    "dialogue_id": "sub_flora_02",
+    "speaker_name": "Player",
+    "portrait_id": "player_neutral",
+    "lines": [
+      "Can you teach me how to manipulate plant life?"
+    ],
+    "next_dialogue_id": "sub_flora_03"
+  },
+  "sub_flora_03": {
+    "dialogue_id": "sub_flora_03",
+    "speaker_name": "Swamp Hermit",
+    "portrait_id": "hermit_neutral",
+    "lines": [
+      "Fluid isn't just in rivers and snow. Look closer... plants are full of water. Muscle and bone made of green."
+    ],
+    "next_dialogue_id": "sub_flora_04"
+  },
+  "sub_flora_04": {
+    "dialogue_id": "sub_flora_04",
+    "speaker_name": "Swamp Hermit",
+    "portrait_id": "hermit_neutral",
+    "lines": [
+      "Defeat my vine-guardians in the deep swamp, and I will show you how to draw power from flora."
+    ],
+    "triggers_battle": "trial_flora_vine_guardians"
+  }
+}

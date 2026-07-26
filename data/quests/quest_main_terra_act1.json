@@ -1,0 +1,15 @@
+{
+  "quest_id": "quest_main_terra_act1",
+  "title": "The Shadow from the Clouds",
+  "prerequisites": { "required_seals": [], "required_level": null },
+  "steps": [
+    {
+      "step_index": 0,
+      "description": "Finish combat practice with Master Goran at Bouldergate Quarry as the Hurricane Warlord's raiders descend to demand tribute.",
+      "target_location": "map_bouldergate_quarry",
+      "completion_flag": "flag_main_terra_act1_started"
+    }
+  ],
+  "rewards": null,
+  "dialogue_ref": "main_terra_act1"
+}

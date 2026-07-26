@@ -1,0 +1,22 @@
+{
+  "sub_metal_01": {
+    "dialogue_id": "sub_metal_01",
+    "speaker_name": "Inventor Kyle",
+    "portrait_id": "kyle_neutral",
+    "lines": [
+      "They tell you stone-shaping stops at dirt? Ha! Dirt is just unrefined ore!"
+    ],
+    "next_dialogue_id": "sub_metal_02"
+  },
+  "sub_metal_02": {
+    "dialogue_id": "sub_metal_02",
+    "speaker_name": "Inventor Kyle",
+    "portrait_id": "kyle_neutral",
+    "sfx": "sfx_metal_clang",
+    "stage_direction": "Iron cage walls spawn around player sprite",
+    "lines": [
+      "Most stone-shapers hit a metal wall and break their wrists. Want to learn to tear steel like paper? Win three rounds in my pit!"
+    ],
+    "triggers_battle": "trial_metal_pit_3rounds"
+  }
+}

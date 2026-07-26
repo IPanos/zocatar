@@ -1,0 +1,15 @@
+{
+  "quest_id": "quest_sub_vapor",
+  "title": "Water from Nothing",
+  "prerequisites": { "required_seals": ["aether_seal", "tide_seal"], "required_level": null },
+  "steps": [
+    {
+      "step_index": 0,
+      "description": "Learn to draw moisture from the air and pass the Desert Nomad's trial of breath in the Sunken Temple.",
+      "target_location": "map_sunken_sun_desert",
+      "completion_flag": "flag_sub_vapor_complete"
+    }
+  ],
+  "rewards": { "unlocked_move_ids": ["move_vapor_form"], "exp_points": null },
+  "dialogue_ref": "sub_vapor"
+}
