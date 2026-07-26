@@ -1,0 +1,11 @@
+{
+  "move_id": "move_cinder_wave",
+  "display_name": "Cinder Wave",
+  "discipline": "Pyre",
+  "description": "A rolling wave of embers that clings and smolders.",
+  "energy_cost": 18,
+  "power": 12,
+  "accuracy": 0.85,
+  "status_effect": "burn",
+  "status_chance": 0.3
+}

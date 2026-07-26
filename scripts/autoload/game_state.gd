@@ -29,6 +29,15 @@ const SUB_DISCIPLINE_COMBOS: Dictionary = {
 	"Metal": ["terra_seal", "pyre_seal"],
 }
 
+# Base moveset per origin: one plain attack, one signature status move. Covers all four
+# canonical status conditions one-to-one (Aether/Stun, Tide/Freeze, Terra/Root, Pyre/Burn).
+const STARTER_MOVES: Dictionary = {
+	"Aether": ["move_gale_slash", "move_static_gust"],
+	"Tide": ["move_tidal_press", "move_frost_lock"],
+	"Terra": ["move_stone_fist", "move_root_wall"],
+	"Pyre": ["move_ember_jab", "move_cinder_wave"],
+}
+
 var starting_origin: String = ""
 var unlocked_seals: Array[String] = []
 var unlocked_disciplines: Array[String] = []
@@ -45,6 +54,8 @@ func _ready() -> void:
 
 func set_starting_origin(origin: String) -> void:
 	starting_origin = origin
+	if equipped_move_deck.is_empty():
+		equipped_move_deck = STARTER_MOVES.get(origin, []).duplicate()
 	origin_changed.emit(origin)
 
 func unlock_seal(seal_name: String) -> void:

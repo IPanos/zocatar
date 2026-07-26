@@ -1,0 +1,11 @@
+{
+  "move_id": "move_frost_lock",
+  "display_name": "Frost Lock",
+  "discipline": "Tide",
+  "description": "Chills the target's joints to a standstill.",
+  "energy_cost": 18,
+  "power": 12,
+  "accuracy": 0.85,
+  "status_effect": "freeze",
+  "status_chance": 0.3
+}

@@ -2,8 +2,8 @@ extends RefCounted
 
 class_name CombatantFactory
 
-# GameState.equipped_move_deck has no starter moves yet (only the 5 sub-discipline reward
-# moves exist) — this fallback keeps the battle scene testable until base movesets are designed.
+# Safety net only — GameState.set_starting_origin() auto-equips STARTER_MOVES, so this only
+# fires if a battle scene is run standalone before an origin has ever been chosen.
 const FALLBACK_TEST_MOVE_ID: String = "move_arc_flash"
 
 static func build_player_combatant() -> Combatant:
@@ -28,7 +28,8 @@ static func build_test_enemy_combatant(origin_name: String = "Pyre") -> Combatan
 	combatant.max_hp = 80
 	combatant.max_chi = 80
 	combatant.defense = 3
-	combatant.moves = _load_moves([FALLBACK_TEST_MOVE_ID])
+	var move_ids: Array = GameState.STARTER_MOVES.get(origin_name, [FALLBACK_TEST_MOVE_ID])
+	combatant.moves = _load_moves(move_ids)
 	return combatant
 
 static func _load_moves(move_ids: Array) -> Array[Move]:

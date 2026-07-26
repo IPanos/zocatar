@@ -1,0 +1,11 @@
+{
+  "move_id": "move_static_gust",
+  "display_name": "Static Gust",
+  "discipline": "Aether",
+  "description": "A buffeting crosswind that knocks the target off balance.",
+  "energy_cost": 18,
+  "power": 12,
+  "accuracy": 0.85,
+  "status_effect": "stun",
+  "status_chance": 0.3
+}

@@ -1,0 +1,11 @@
+{
+  "move_id": "move_root_wall",
+  "display_name": "Root Wall",
+  "discipline": "Terra",
+  "description": "Stone spurs erupt underfoot, anchoring the target in place.",
+  "energy_cost": 18,
+  "power": 12,
+  "accuracy": 0.85,
+  "status_effect": "root",
+  "status_chance": 0.3
+}

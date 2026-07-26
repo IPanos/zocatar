@@ -1,0 +1,9 @@
+{
+  "move_id": "move_gale_slash",
+  "display_name": "Gale Slash",
+  "discipline": "Aether",
+  "description": "A cutting arc of compressed wind.",
+  "energy_cost": 10,
+  "power": 18,
+  "accuracy": 0.95
+}

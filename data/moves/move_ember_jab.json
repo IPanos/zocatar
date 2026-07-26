@@ -1,0 +1,9 @@
+{
+  "move_id": "move_ember_jab",
+  "display_name": "Ember Jab",
+  "discipline": "Pyre",
+  "description": "A quick, searing strike.",
+  "energy_cost": 10,
+  "power": 18,
+  "accuracy": 0.95
+}

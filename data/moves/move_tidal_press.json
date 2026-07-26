@@ -1,0 +1,9 @@
+{
+  "move_id": "move_tidal_press",
+  "display_name": "Tidal Press",
+  "discipline": "Tide",
+  "description": "A crushing wave driven forward with the current.",
+  "energy_cost": 10,
+  "power": 18,
+  "accuracy": 0.95
+}
