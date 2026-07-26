@@ -1,0 +1,21 @@
+[gd_scene load_steps=1 format=3 uid="uid://d2v1bp0qfyel1"]
+
+[node name="BattleEngine" type="Node2D"]
+metadata/description = "Turn-based combat system - handles 1v1 or 3v3 elemental kineticist duels"
+
+[node name="PlayerTeam" type="Node" parent="."]
+metadata/placeholder = "Add player team entities here"
+
+[node name="EnemyTeam" type="Node" parent="."]
+metadata/placeholder = "Add enemy team entities here"
+
+[node name="BattleUI" type="CanvasLayer" parent="."]
+
+[node name="MoveSelector" type="Control" parent="BattleUI"]
+metadata/placeholder = "Add move selection UI (6-move deck)"
+
+[node name="StatusIndicators" type="Control" parent="BattleUI"]
+metadata/placeholder = "Add status condition displays (Stun, Burn, Freeze, Root)"
+
+[node name="EnergyBars" type="Control" parent="BattleUI"]
+metadata/placeholder = "Add Chi/Energy meter displays"

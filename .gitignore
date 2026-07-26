@@ -1,0 +1,31 @@
+# Godot 4 specific ignores
+.godot/
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.o
+*.obj
+
+# Import cache
+.godot/imported/
+
+# Exported builds
+builds/
+dist/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+.env

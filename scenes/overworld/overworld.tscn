@@ -1,0 +1,19 @@
+[gd_scene load_steps=1 format=3 uid="uid://c05mg43bm7bnl"]
+
+[node name="Overworld" type="Node2D"]
+metadata/description = "Main overworld scene - tilemap, NPCs, and world exploration"
+
+[node name="TileMap" type="TileMap" parent="."]
+metadata/placeholder = "Add tilemap layers here"
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(160, 120)
+metadata/placeholder = "Add player sprite and movement here"
+
+[node name="NPCs" type="Node" parent="."]
+metadata/placeholder = "Add NPC nodes here"
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="DialogueBox" type="Control" parent="UI"]
+metadata/placeholder = "Add dialogue box UI here"

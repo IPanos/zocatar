@@ -1,0 +1,32 @@
+[gd_scene load_steps=1 format=3 uid="uid://b4c5k8ycdfgh2"]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+metadata/description = "Main menu - new game, load game, settings"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -60.0
+offset_right = 80.0
+offset_bottom = 60.0
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+text = "ZOCATAR"
+metadata/description = "Game title"
+
+[node name="NewGameButton" type="Button" parent="VBoxContainer"]
+text = "New Game"
+
+[node name="LoadGameButton" type="Button" parent="VBoxContainer"]
+text = "Load Game"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer"]
+text = "Settings"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+text = "Quit"
