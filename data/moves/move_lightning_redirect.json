@@ -2,8 +2,10 @@
   "move_id": "move_lightning_redirect",
   "display_name": "Lightning Redirect",
   "discipline": "Lightning",
-  "description": "Guides a charge back along its own path. NOTE: true attack-redirection isn't implemented by BattleEngine yet — currently resolves as a plain damage hit pending a reflect/counter mechanic.",
+  "description": "Guides a charge back along its own path. Requires mastery of Pyre — without it, the attempt to split and redirect the energy backfires on the user.",
   "energy_cost": 20,
-  "power": 20,
-  "accuracy": 1.0
+  "power": 0,
+  "accuracy": 1.0,
+  "is_redirect_stance": true,
+  "redirect_requires_origin": "Pyre"
 }

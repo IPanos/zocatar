@@ -81,3 +81,14 @@ func get_world_flag(flag_name: String, default: bool = false) -> bool:
 
 func get_zone_level() -> int:
 	return unlocked_seals.size()
+
+## Origins the player has mastered (their own starting origin, plus any origin whose seal
+## they've unlocked). Used to populate Combatant.mastered_origins for redirect-stance gating.
+func get_mastered_origins() -> Array[String]:
+	var mastered: Array[String] = []
+	if starting_origin != "":
+		mastered.append(starting_origin)
+	for origin_name in ORIGIN_SEAL_IDS:
+		if has_seal(ORIGIN_SEAL_IDS[origin_name]) and origin_name not in mastered:
+			mastered.append(origin_name)
+	return mastered
