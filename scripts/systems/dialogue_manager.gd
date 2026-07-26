@@ -1,7 +1,5 @@
 extends Node
 
-class_name DialogueManager
-
 signal dialogue_started(dialogue_id: String)
 signal line_shown(speaker_name: String, portrait_id: String, text: String)
 signal choices_presented(choices: Array)

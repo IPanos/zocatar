@@ -1,7 +1,5 @@
 extends Node
 
-class_name ScalingEngine
-
 const BASE_LEVEL_DEFAULT: int = 5
 const SEAL_LEVEL_MULTIPLIER: int = 8
 

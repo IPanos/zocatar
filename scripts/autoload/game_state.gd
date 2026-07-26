@@ -1,7 +1,5 @@
 extends Node
 
-class_name GameState
-
 const ORIGINS: Array[String] = ["Aether", "Tide", "Terra", "Pyre"]
 
 # Elemental opposite pairs — used by ScalingEngine to assign the final boss origin.
@@ -55,7 +53,7 @@ func _ready() -> void:
 func set_starting_origin(origin: String) -> void:
 	starting_origin = origin
 	if equipped_move_deck.is_empty():
-		equipped_move_deck = STARTER_MOVES.get(origin, []).duplicate()
+		equipped_move_deck.assign(STARTER_MOVES.get(origin, []))
 	origin_changed.emit(origin)
 
 func unlock_seal(seal_name: String) -> void:

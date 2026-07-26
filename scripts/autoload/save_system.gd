@@ -1,7 +1,5 @@
 extends Node
 
-class_name SaveSystem
-
 const SAVE_DIR = "user://saves/"
 const SAVE_FILE = "user://saves/game.json"
 
@@ -11,7 +9,7 @@ func _ready() -> void:
 
 func _ensure_save_directory() -> void:
 	if not DirAccess.dir_exists_absolute(SAVE_DIR):
-		DirAccess.make_abs_absolute(SAVE_DIR)
+		DirAccess.make_dir_recursive_absolute(SAVE_DIR)
 
 func save_game() -> bool:
 	var game_data = {
@@ -53,9 +51,9 @@ func load_game() -> bool:
 
 	var game_data = json.data as Dictionary
 	GameState.starting_origin = game_data.get("starting_origin", "")
-	GameState.unlocked_seals = game_data.get("unlocked_seals", [])
-	GameState.unlocked_disciplines = game_data.get("unlocked_disciplines", [])
-	GameState.equipped_move_deck = game_data.get("equipped_move_deck", [])
+	GameState.unlocked_seals.assign(game_data.get("unlocked_seals", []))
+	GameState.unlocked_disciplines.assign(game_data.get("unlocked_disciplines", []))
+	GameState.equipped_move_deck.assign(game_data.get("equipped_move_deck", []))
 	GameState.world_flags = game_data.get("world_flags", {})
 
 	return true
