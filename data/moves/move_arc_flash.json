@@ -1,0 +1,11 @@
+{
+  "move_id": "move_arc_flash",
+  "display_name": "Arc Flash",
+  "discipline": "Lightning",
+  "description": "Splits positive and negative energy and lets them clash in a blinding arc.",
+  "energy_cost": 25,
+  "power": 30,
+  "accuracy": 0.95,
+  "status_effect": "stun",
+  "status_chance": 0.2
+}

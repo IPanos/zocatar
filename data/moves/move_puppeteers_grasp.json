@@ -1,0 +1,11 @@
+{
+  "move_id": "move_puppeteers_grasp",
+  "display_name": "Puppeteer's Grasp",
+  "discipline": "Vitalis",
+  "description": "Bends the riverbed of living flesh. NOTE: full enemy-control mechanics aren't implemented by BattleEngine yet — currently resolves as a heavy stun pending a true control/puppet mechanic.",
+  "energy_cost": 35,
+  "power": 10,
+  "accuracy": 0.85,
+  "status_effect": "stun",
+  "status_chance": 0.9
+}

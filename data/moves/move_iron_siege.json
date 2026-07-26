@@ -1,0 +1,10 @@
+{
+  "move_id": "move_iron_siege",
+  "display_name": "Iron Siege",
+  "discipline": "Metal",
+  "description": "Tears through steel like paper, ignoring 100% of enemy armor.",
+  "energy_cost": 30,
+  "power": 25,
+  "accuracy": 0.9,
+  "ignore_defense": true
+}

@@ -1,6 +1,9 @@
-[gd_scene load_steps=1 format=3 uid="uid://d2v1bp0qfyel1"]
+[gd_scene load_steps=2 format=3 uid="uid://d2v1bp0qfyel1"]
+
+[ext_resource type="Script" path="res://scripts/systems/battle_engine.gd" id="1"]
 
 [node name="BattleEngine" type="Node2D"]
+script = ExtResource("1")
 metadata/description = "Turn-based combat system - handles 1v1 or 3v3 elemental kineticist duels"
 
 [node name="PlayerTeam" type="Node" parent="."]

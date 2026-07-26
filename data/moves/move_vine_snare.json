@@ -1,0 +1,12 @@
+{
+  "move_id": "move_vine_snare",
+  "display_name": "Vine Snare",
+  "discipline": "Flora",
+  "description": "Drains HP and roots the target in living vine-growth.",
+  "energy_cost": 20,
+  "power": 15,
+  "accuracy": 0.9,
+  "status_effect": "root",
+  "status_chance": 1.0,
+  "lifesteal_percent": 0.5
+}

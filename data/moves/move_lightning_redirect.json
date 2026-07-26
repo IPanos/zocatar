@@ -1,0 +1,9 @@
+{
+  "move_id": "move_lightning_redirect",
+  "display_name": "Lightning Redirect",
+  "discipline": "Lightning",
+  "description": "Guides a charge back along its own path. NOTE: true attack-redirection isn't implemented by BattleEngine yet — currently resolves as a plain damage hit pending a reflect/counter mechanic.",
+  "energy_cost": 20,
+  "power": 20,
+  "accuracy": 1.0
+}
