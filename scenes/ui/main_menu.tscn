@@ -1,8 +1,11 @@
-[gd_scene load_steps=1 format=3 uid="uid://b4c5k8ycdfgh2"]
+[gd_scene load_steps=2 format=3 uid="uid://b4c5k8ycdfgh2"]
+
+[ext_resource type="Script" path="res://scripts/ui/main_menu.gd" id="1"]
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource("1")
 metadata/description = "Main menu - new game, load game, settings"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -30,3 +33,9 @@ text = "Settings"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 text = "Quit"
+
+[node name="DonationButton" type="Button" parent="VBoxContainer"]
+disabled = true
+text = "Support the Dev"
+tooltip_text = "Coming soon"
+metadata/description = "OpenURL hook — disabled until a donation/support URL is provided"

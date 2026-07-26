@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://e7k2n9qtx5rm3"]
+
+[ext_resource type="Script" path="res://scripts/ui/origin_select.gd" id="1"]
+
+[node name="OriginSelect" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+metadata/description = "Origin picker - player selects 1 of 4 starting elements"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -80.0
+offset_right = 60.0
+offset_bottom = 80.0
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+text = "Choose Your Origin"
+
+[node name="AetherButton" type="Button" parent="VBoxContainer"]
+text = "Aether (Air)"
+metadata/origin = "Aether"
+
+[node name="TideButton" type="Button" parent="VBoxContainer"]
+text = "Tide (Water)"
+metadata/origin = "Tide"
+
+[node name="TerraButton" type="Button" parent="VBoxContainer"]
+text = "Terra (Earth)"
+metadata/origin = "Terra"
+
+[node name="PyreButton" type="Button" parent="VBoxContainer"]
+text = "Pyre (Fire)"
+metadata/origin = "Pyre"

@@ -17,6 +17,7 @@ func save_game() -> bool:
 	var game_data = {
 		"starting_origin": GameState.starting_origin,
 		"unlocked_seals": GameState.unlocked_seals,
+		"unlocked_disciplines": GameState.unlocked_disciplines,
 		"equipped_move_deck": GameState.equipped_move_deck,
 		"world_flags": GameState.world_flags,
 		"timestamp": Time.get_ticks_msec()
@@ -53,6 +54,7 @@ func load_game() -> bool:
 	var game_data = json.data as Dictionary
 	GameState.starting_origin = game_data.get("starting_origin", "")
 	GameState.unlocked_seals = game_data.get("unlocked_seals", [])
+	GameState.unlocked_disciplines = game_data.get("unlocked_disciplines", [])
 	GameState.equipped_move_deck = game_data.get("equipped_move_deck", [])
 	GameState.world_flags = game_data.get("world_flags", {})
 

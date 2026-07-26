@@ -6,7 +6,7 @@ A retro 16-bit mobile 2D RPG inspired by GBA-style Pokémon games, built in Godo
 
 - **Top-down Overworld**: Tilemap movement, dialogue system with choice branches, and combat transitions
 - **Turn-Based Combat**: 1v1 / 3v3 elemental kineticist duels with Chi/Energy meter and status conditions
-- **Origin-Based Scaling**: Choose from 4 elemental origins (Zephyr/Air, Tide/Water, Terra/Earth, Pyre/Fire) with dynamic zone scaling
+- **Origin-Based Scaling**: Choose from 4 elemental origins (Aether/Air, Tide/Water, Terra/Earth, Pyre/Fire) with dynamic zone scaling
 - **Persistent Save System**: JSON-serializable saves tracking origins, seals, move decks, and world state
 
 ## Technical Stack
