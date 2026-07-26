@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://scripts/ui/dialogue_box.gd" id="2"]
 [ext_resource type="Script" path="res://scripts/entities/player_controller.gd" id="3"]
 [ext_resource type="Script" path="res://scripts/ui/virtual_dpad.gd" id="4"]
+[ext_resource type="TileSet" path="res://assets/graphics/overworld_tileset.tres" id="5"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(12, 12)
@@ -13,7 +14,8 @@ script = ExtResource("1")
 metadata/description = "Main overworld scene - tilemap, NPCs, and world exploration"
 
 [node name="TileMap" type="TileMap" parent="."]
-metadata/placeholder = "Add tilemap layers + TileSet with collision once tile art exists"
+tile_set = ExtResource("5")
+metadata/placeholder = "Placeholder solid-color tileset; room is painted procedurally in overworld.gd until real tile art exists"
 
 [node name="Player" type="CharacterBody2D" parent="."]
 script = ExtResource("3")
