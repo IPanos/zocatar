@@ -10,7 +10,7 @@ config_version=5
 
 config/name="Zocatar"
 config/description="A retro 16-bit mobile 2D RPG inspired by GBA-style Pokémon games"
-run/main_scene="res://scenes/overworld/overworld.tscn"
+run/main_scene="res://scenes/ui/main_menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 

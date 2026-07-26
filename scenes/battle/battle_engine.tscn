@@ -1,24 +1,65 @@
-[gd_scene load_steps=2 format=3 uid="uid://d2v1bp0qfyel1"]
+[gd_scene load_steps=3 format=3 uid="uid://d2v1bp0qfyel1"]
 
-[ext_resource type="Script" path="res://scripts/systems/battle_engine.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/systems/battle_scene.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/ui/battle_ui.gd" id="2"]
 
 [node name="BattleEngine" type="Node2D"]
 script = ExtResource("1")
-metadata/description = "Turn-based combat system - handles 1v1 or 3v3 elemental kineticist duels"
+metadata/description = "Turn-based combat scene bootstrap - spawns a test 1v1 and wires BattleEngine to BattleUI"
 
 [node name="PlayerTeam" type="Node" parent="."]
-metadata/placeholder = "Add player team entities here"
 
 [node name="EnemyTeam" type="Node" parent="."]
-metadata/placeholder = "Add enemy team entities here"
 
 [node name="BattleUI" type="CanvasLayer" parent="."]
+script = ExtResource("2")
+
+[node name="HealthBars" type="VBoxContainer" parent="BattleUI"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 120.0
+offset_bottom = 60.0
+
+[node name="PlayerHealthBar" type="ProgressBar" parent="BattleUI/HealthBars"]
+custom_minimum_size = Vector2(100, 12)
+show_percentage = false
+
+[node name="PlayerChiBar" type="ProgressBar" parent="BattleUI/HealthBars"]
+custom_minimum_size = Vector2(100, 8)
+show_percentage = false
+
+[node name="EnemyHealthBar" type="ProgressBar" parent="BattleUI/HealthBars"]
+custom_minimum_size = Vector2(100, 12)
+show_percentage = false
+
+[node name="EnemyChiBar" type="ProgressBar" parent="BattleUI/HealthBars"]
+custom_minimum_size = Vector2(100, 8)
+show_percentage = false
+
+[node name="StatusIndicators" type="VBoxContainer" parent="BattleUI"]
+offset_left = 8.0
+offset_top = 64.0
+offset_right = 120.0
+offset_bottom = 96.0
+
+[node name="PlayerStatusLabel" type="Label" parent="BattleUI/StatusIndicators"]
+
+[node name="EnemyStatusLabel" type="Label" parent="BattleUI/StatusIndicators"]
+
+[node name="MessageLabel" type="Label" parent="BattleUI"]
+offset_left = 8.0
+offset_top = 100.0
+offset_right = 312.0
+offset_bottom = 130.0
+autowrap_mode = 2
 
 [node name="MoveSelector" type="Control" parent="BattleUI"]
-metadata/placeholder = "Add move selection UI (6-move deck)"
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
 
-[node name="StatusIndicators" type="Control" parent="BattleUI"]
-metadata/placeholder = "Add status condition displays (Stun, Burn, Freeze, Root)"
-
-[node name="EnergyBars" type="Control" parent="BattleUI"]
-metadata/placeholder = "Add Chi/Energy meter displays"
+[node name="MoveButtons" type="VBoxContainer" parent="BattleUI/MoveSelector"]
+anchor_right = 1.0
+anchor_bottom = 1.0
