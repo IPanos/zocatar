@@ -14,6 +14,12 @@ var current_dialogue_id: String = ""
 var current_node: Dictionary = {}
 var current_line_index: int = -1
 
+func _ready() -> void:
+	# Connected here rather than in GameState._ready(): GameState loads before
+	# DialogueManager in project.godot's autoload order, so referencing DialogueManager
+	# from GameState's own _ready() would run before this singleton exists.
+	move_granted.connect(GameState.grant_move)
+
 func load_dialogue_file(path: String) -> void:
 	var file := FileAccess.open(path, FileAccess.READ)
 	if file == null:

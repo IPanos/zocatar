@@ -96,6 +96,7 @@ func _ready() -> void:
 	player.interacted.connect(_on_player_interacted)
 	virtual_controls.direction_pressed.connect(player.try_move)
 	virtual_controls.action_pressed.connect(player.interact)
+	DialogueManager.battle_triggered.connect(_on_battle_triggered)
 
 func _paint_room(layout: Dictionary) -> void:
 	var floor_coord: Vector2i = layout["floor"]
@@ -134,3 +135,7 @@ func _play_act1_intro() -> void:
 		return
 	DialogueManager.load_dialogue_file(dialogue_path)
 	DialogueManager.start_dialogue(ACT1_START_NODE[GameState.starting_origin])
+
+func _on_battle_triggered(encounter_id: String) -> void:
+	GameState.pending_battle_encounter = encounter_id
+	get_tree().change_scene_to_file("res://scenes/battle/battle_engine.tscn")

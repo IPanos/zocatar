@@ -6,6 +6,18 @@ class_name CombatantFactory
 # fires if a battle scene is run standalone before an origin has ever been chosen.
 const FALLBACK_TEST_MOVE_ID: String = "move_arc_flash"
 
+# Encounter id (from a dialogue node's triggers_battle field) -> the single origin used to
+# build a stand-in test enemy. Real encounters (e.g. the Lightning trial vs. Master Rai,
+# who fights with a Pyre+Aether combo) don't cleanly reduce to one origin — this is a
+# placeholder simplification until battles have their own authored enemy data.
+const ENCOUNTER_ENEMY_ORIGIN: Dictionary = {
+	"battle_tutorial_pyre_scout": "Pyre",
+	"trial_lightning_focus": "Pyre",
+	"trial_flora_vine_guardians": "Terra",
+	"trial_vapor_breath": "Tide",
+	"trial_metal_pit_3rounds": "Terra",
+}
+
 static func build_player_combatant() -> Combatant:
 	var combatant := Combatant.new()
 	combatant.display_name = "Player"
@@ -19,6 +31,13 @@ static func build_player_combatant() -> Combatant:
 		move_ids = [FALLBACK_TEST_MOVE_ID]
 	combatant.moves = _load_moves(move_ids)
 	return combatant
+
+## Resolves GameState.pending_battle_encounter to an enemy origin, falling back to a
+## generic default when the encounter is unknown or no encounter is pending (e.g. running
+## battle_engine.tscn standalone for a quick test).
+static func build_encounter_enemy_combatant() -> Combatant:
+	var origin_name: String = ENCOUNTER_ENEMY_ORIGIN.get(GameState.pending_battle_encounter, "Pyre")
+	return build_test_enemy_combatant(origin_name)
 
 static func build_test_enemy_combatant(origin_name: String = "Pyre") -> Combatant:
 	var combatant := Combatant.new()

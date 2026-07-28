@@ -36,16 +36,23 @@ const STARTER_MOVES: Dictionary = {
 	"Pyre": ["move_ember_jab", "move_cinder_wave"],
 }
 
+const MAX_MOVE_DECK_SIZE: int = 6
+
 var starting_origin: String = ""
 var unlocked_seals: Array[String] = []
 var unlocked_disciplines: Array[String] = []
 var equipped_move_deck: Array[String] = []
 var world_flags: Dictionary = {}
 
+# Set by whoever handles DialogueManager.battle_triggered right before transitioning to
+# the battle scene, so CombatantFactory can build an enemy appropriate to the encounter.
+var pending_battle_encounter: String = ""
+
 signal origin_changed(new_origin: String)
 signal seal_unlocked(seal_name: String)
 signal discipline_unlocked(discipline_name: String)
 signal world_flag_changed(flag_name: String, value: bool)
+signal move_deck_changed()
 
 func _ready() -> void:
 	name = "GameState"
@@ -80,6 +87,18 @@ func unlock_discipline(discipline_name: String) -> void:
 
 func set_equipped_moves(moves: Array[String]) -> void:
 	equipped_move_deck = moves
+	move_deck_changed.emit()
+
+## Adds a newly-learned move to the deck if there's room and it isn't already equipped.
+## A full deck at MAX_MOVE_DECK_SIZE is not auto-replaced — swapping moves is a player
+## choice this project doesn't have a UI for yet, so the move is simply not added.
+func grant_move(move_id: String) -> void:
+	if move_id in equipped_move_deck:
+		return
+	if equipped_move_deck.size() >= MAX_MOVE_DECK_SIZE:
+		return
+	equipped_move_deck.append(move_id)
+	move_deck_changed.emit()
 
 func set_world_flag(flag_name: String, value: bool) -> void:
 	world_flags[flag_name] = value
