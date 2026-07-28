@@ -23,6 +23,8 @@ script = ExtResource("3")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource("1")
 
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
 [node name="NPCs" type="Node" parent="."]
 
 [node name="StoryNPC" type="Node2D" parent="NPCs"]
