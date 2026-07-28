@@ -97,6 +97,11 @@ func _ready() -> void:
 	virtual_controls.direction_pressed.connect(player.try_move)
 	virtual_controls.action_pressed.connect(player.interact)
 	DialogueManager.battle_triggered.connect(_on_battle_triggered)
+	# Hide the D-pad/action overlay during dialogue — it was rendering on top of the
+	# dialogue box (both occupy the bottom of the screen) and its buttons would eat
+	# taps meant to advance text, moving the player instead.
+	DialogueManager.dialogue_started.connect(func(_id): virtual_controls.visible = false)
+	DialogueManager.dialogue_ended.connect(func(): virtual_controls.visible = true)
 
 func _paint_room(layout: Dictionary) -> void:
 	var floor_coord: Vector2i = layout["floor"]
